@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="-478" y="-425"/>
         </scene>
-        <!--Snapchat Clone-->
+        <!--Snapchat 2.0-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ImagePickerController" customModule="Snapchat_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                             <constraint firstItem="wYC-QR-9eI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYT-DC-Fxg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Snapchat Clone" id="1DI-gn-L1G"/>
+                    <navigationItem key="navigationItem" title="Snapchat 2.0" id="1DI-gn-L1G"/>
                     <connections>
                         <outlet property="imageCollectionView" destination="wYC-QR-9eI" id="lwC-Kg-QfQ"/>
                         <segue destination="BA9-qW-B4Y" kind="show" identifier="toPicker" id="31r-1S-VAS"/>
@@ -192,7 +192,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-6w-0dz">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-6w-0dz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -202,7 +202,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YGg-6w-0dz" firstAttribute="centerX" secondItem="qQe-zL-3iB" secondAttribute="centerX" id="Q7Y-MO-2Pr"/>
                             <constraint firstItem="YGg-6w-0dz" firstAttribute="height" secondItem="qQe-zL-3iB" secondAttribute="height" id="V8Z-yZ-0i5"/>
+                            <constraint firstItem="YGg-6w-0dz" firstAttribute="centerY" secondItem="qQe-zL-3iB" secondAttribute="centerY" id="cza-di-5JJ"/>
                             <constraint firstItem="YGg-6w-0dz" firstAttribute="width" secondItem="qQe-zL-3iB" secondAttribute="width" id="yhz-vu-yRW"/>
                         </constraints>
                     </view>
@@ -237,18 +239,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-nx-1Pr">
-                                <rect key="frame" x="0.0" y="562" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="615" width="424" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posting to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFu-zU-fvL">
-                                        <rect key="frame" x="15" y="18" width="116" height="21"/>
+                                        <rect key="frame" x="16" y="24" width="116" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-Gi-m01">
-                                        <rect key="frame" x="308" y="-9" width="59" height="69"/>
+                                        <rect key="frame" x="334" y="0.0" width="59" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="goButton"/>
                                         <connections>
@@ -257,14 +259,14 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="memes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXT-G3-NKS">
-                                        <rect key="frame" x="139" y="18" width="97" height="21"/>
+                                        <rect key="frame" x="139" y="24" width="97" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.85233310601027323" green="0.95403967560029712" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
