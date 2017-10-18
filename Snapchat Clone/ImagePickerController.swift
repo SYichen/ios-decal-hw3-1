@@ -10,6 +10,9 @@ import UIKit
 
 // This class should remind you of lab 3. That's probably because it's exactly the same!
 class ImagePickerController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    @IBAction func unwind(segue: UIStoryboardSegue){}
+    @IBAction func unwindToImagePicker(_ segue: UIStoryboardSegue){}
+
     
     @IBOutlet var imageCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -24,6 +27,7 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
 
     func selectImage(_ image: UIImage) {
         //The image being selected is passed in as "image".
+        performSegue(withIdentifier: "toPicker", sender: image)
     }
     
     
@@ -46,6 +50,16 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
         if let selectedCell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell {
             selectImage(selectedCell.image.image!)
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ID = segue.identifier {
+            if ID == "toPicker" {
+                if let dest = segue.destination as? PickerViewController {
+                    dest.imageToPost = sender as? UIImage
+                }
+            }
+        }
     }
 }
+

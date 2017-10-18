@@ -13,8 +13,7 @@ import UIKit
 // or come up with a better way to keep track of snaps (MVC is your friend!).
 
 // This is one way you can store snaps. Can you think of a better way?
-var threads: [String: [UIImage]] = ["memes": [], "dog spots": [], "random": []]
-
+var threads: [String: [SnapImage]] = ["memes": [], "dog spots": [], "random": []]
 
 let threadNames = ["memes", "dog spots", "random"]
 
@@ -28,3 +27,15 @@ var allImages: [UIImage] = [UIImage(named: "dog1")!,
                             UIImage(named: "dog3")!,
                             UIImage(named: "meme3")!,
                             UIImage(named: "other3")!]
+class SnapImage {
+    var image: UIImage
+    var read: Bool
+    var time: Date
+    var section: String
+    init(image: UIImage, time: Date) {
+        self.image = image
+        self.read = false
+        self.time = time
+        self.section = "none"
+    }
+}

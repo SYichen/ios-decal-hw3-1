@@ -17,6 +17,10 @@
 		4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2DC1E650ECA009916E4 /* ImageFeed.swift */; };
 		4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2E21E6514EE009916E4 /* ImagePickerController.swift */; };
 		4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */; };
+		E15A5AD11F97218E0057DF5C /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A5AD01F97218E0057DF5C /* PickerViewController.swift */; };
+		E15A5AD31F972DE20057DF5C /* FeedDisplayCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A5AD21F972DE20057DF5C /* FeedDisplayCellTableViewCell.swift */; };
+		E15A5AD51F972E330057DF5C /* FeedDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A5AD41F972E330057DF5C /* FeedDisplayController.swift */; };
+		E15A5AD71F9733330057DF5C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A5AD61F9733330057DF5C /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		4196F2DC1E650ECA009916E4 /* ImageFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeed.swift; sourceTree = "<group>"; };
 		4196F2E21E6514EE009916E4 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNavigationController.swift; sourceTree = "<group>"; };
+		E15A5AD01F97218E0057DF5C /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		E15A5AD21F972DE20057DF5C /* FeedDisplayCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDisplayCellTableViewCell.swift; sourceTree = "<group>"; };
+		E15A5AD41F972E330057DF5C /* FeedDisplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDisplayController.swift; sourceTree = "<group>"; };
+		E15A5AD61F9733330057DF5C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				417986C81E664AE40050E1DF /* ImageCollectionViewCell.swift */,
+				E15A5AD21F972DE20057DF5C /* FeedDisplayCellTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -75,8 +84,11 @@
 			children = (
 				417986C41E6632C40050E1DF /* TabBarController.swift */,
 				4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */,
+				E15A5AD61F9733330057DF5C /* ImageViewController.swift */,
 				417986CE1E6657650050E1DF /* Cells */,
 				4196F2E21E6514EE009916E4 /* ImagePickerController.swift */,
+				E15A5AD01F97218E0057DF5C /* PickerViewController.swift */,
+				E15A5AD41F972E330057DF5C /* FeedDisplayController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -185,11 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				417986CB1E664CB60050E1DF /* ImageFlowLayout.swift in Sources */,
+				E15A5AD31F972DE20057DF5C /* FeedDisplayCellTableViewCell.swift in Sources */,
 				4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */,
 				417986C51E6632C40050E1DF /* TabBarController.swift in Sources */,
+				E15A5AD51F972E330057DF5C /* FeedDisplayController.swift in Sources */,
 				417986C91E664AE40050E1DF /* ImageCollectionViewCell.swift in Sources */,
 				4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */,
 				4196F2CB1E6509E8009916E4 /* AppDelegate.swift in Sources */,
+				E15A5AD11F97218E0057DF5C /* PickerViewController.swift in Sources */,
+				E15A5AD71F9733330057DF5C /* ImageViewController.swift in Sources */,
 				4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
